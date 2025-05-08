@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    
+        <!-- Link to Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    
+    <style>
+        body {
+            background-color: rgb(200, 238, 162);
+            margin-top: 250px;
+            margin-left: 550px;
+        }
+
+        .content {
+            justify-items: center;
+            background-color: rgb(252, 247, 247);
+            color: black;
+            height: 200px;
+            width: 500px;
+            border: solid;
+            border-color: black;
+            padding: 30px;
+        }
+
+        .btn {
+            color: white;
+            background-color: black;
+        }
+
+        .result {
+            font-weight: bold;
+        }
+
+        .guess {
+            font-weight: bold;
+        }
+
+        .input {
+            background-color: rgb(236, 223, 223);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="title">Guess the Number from 1 to 5 <i class="fas fa-lightbulb"></i>
+            <i class="fas fa-question-circle"></i> <br></h1>
+        <input type="text" placeholder="Enter the Numer" id="inputBox" class="input">
+        <button id="button" onclick="checkthenumber()" class="btn">Check</button>
+        <p id="result" class="result">You are Right/Wrong</p>
+        <p id="guesscount" class="guess"> Guesses: 3</p>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
